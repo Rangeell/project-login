@@ -7,7 +7,9 @@
     <title>Login</title>
 
     <!-- icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
     <link rel="shortcut icon" href="images/pagina-de-login.png" type="image/x-icon">
 
     <!-- Styles -->
@@ -36,18 +38,18 @@
                 <!-- E-mail section -->
                 <div class="boxLogin">
                     <label for="iemail"><span id="person-icon" class="material-symbols-outlined">person</span></label>
-                    <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required>
+                    <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
                 </div>
 
                 <!-- Password section -->
                 <div class="boxLogin">
                     <label for="isenha"><span id="key-icon" class="material-symbols-outlined">vpn_key</span></label>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" required>
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" maxlength="20" required autocomplete="current-password">
                 </div>
 
                 <!-- Send buttom -->
-                 <input type="submit" value="Entrar">
-                 <a href="#">Esqueci a senha <span id="email-icon" class="material-symbols-outlined">mail</span></a>
+                <input type="submit" value="Entrar">
+                <a href="#">Esqueci a senha <span id="email-icon" class="material-symbols-outlined">mail</span></a>
             </form>
         </div>
     </main>

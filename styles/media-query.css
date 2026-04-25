@@ -7,6 +7,7 @@
 
     main {
         width: 80vw;
+        height: 290px;
     }
 
     #image {
@@ -45,12 +46,13 @@
 
     main {
         width: 95%;
+        height: 350px;
     }
 
     main>#login>p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
-        margin-bottom: 10px;
+        margin: 20px 0px;
     }
 
     form,

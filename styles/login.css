@@ -31,6 +31,7 @@ body {
 main {
     background-color: white;
     width: 250px;
+    height: 515px;
     max-width: 950px;
     border-radius: 20px;
     text-align: center;
@@ -77,20 +78,23 @@ main>#login>p {
     /* width: 40px; */
     display: inline-block;
     vertical-align: middle;
+    width: 40px;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 /* input's section */
 input[type='email'],
 input[type='password'] {
     background-color: #94CFCD;
+    width: calc(100% - 45px);
+    height: 100%;
     padding: 10px;
     border-radius: 8px;
 }
@@ -115,7 +119,8 @@ input[type='submit'] {
     font-size: 1rem;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover,
+input[type=submit]:focus {
     background-color: #285453;
     cursor: pointer;
 }
@@ -132,7 +137,8 @@ form>a {
     border: 1px solid #92C6C4;
 }
 
-form>a:hover {
+form>a:hover,
+form>a:focus {
     background-color: #6ad5d1;
 }
 

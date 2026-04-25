@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/pagina-de-login.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+
+</head>
+
+<body>
+    <main>
+        <div id="image">
+
+        </div>
+
+        <!-- Login section -->
+        <div id="login">
+            <h1>Login</h1>
+            <p>
+                Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                ambiente.
+            </p>
+
+            <!-- Form section -->
+            <form action="login.php" method="get" autocomplete="on">
+
+                <!-- E-mail section -->
+                <div class="boxLogin">
+                    <label for="iemail"><span id="person-icon" class="material-symbols-outlined">person</span></label>
+                    <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required>
+                </div>
+
+                <!-- Password section -->
+                <div class="boxLogin">
+                    <label for="isenha"><span id="key-icon" class="material-symbols-outlined">vpn_key</span></label>
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" required>
+                </div>
+
+                <!-- Send buttom -->
+                 <input type="submit" value="Entrar">
+                 <a href="#">Esqueci a senha <span id="email-icon" class="material-symbols-outlined">mail</span></a>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
